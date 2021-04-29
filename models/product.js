@@ -9,10 +9,22 @@ const productSchema = new mongoose.Schema(
             required: true,
             maxlength: 32
         },
+        subname: {
+            type: String,
+            trim: true,
+            required: true,
+            maxlength: 40
+        },
+        youtubelink: {
+            type: String,
+            trim: true,
+            required: true,
+            maxlength: 100
+        },
         description: {
             type: String,
             required: true,
-            maxlength: 2000
+            maxlength: 5000
         },
         price: {
             type: Number,
